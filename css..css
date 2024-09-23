@@ -1,0 +1,113 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2F5alfiat.com%2F%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D9%2584%25D9%2584%25D9%2583%25D8%25AA%25D8%25A7%25D8%25A8%25D8%25A9-%25D8%25B9%25D9%2584%25D9%258A%25D9%2587%25D8%25A7-%25D8%25B3%25D8%25A7%25D8%25AF%25D8%25A9-4k-hd%2F&psig=AOvVaw3egGeb6uGZAZE8KllzawSu&ust=1727214758536000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKjF6cOG2ogDFQAAAAAdAAAAABAE'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 300px;
+}
+
+h1 {
+    color: hwb(337 51% 14%);
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    border: 2px solid #57304d;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: hwb(310 40% 3%);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ee76da;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: hsl(320, 46%, 46%);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px dashed hsl(313, 58%, 57%);
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+    position: relative;
+}
+
+li.completed {
+    background-color: #D4EDDA;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button.delete {
+    background-color: #b379ae;
+    margin-left: auto;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#congratulations {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #28a745;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
